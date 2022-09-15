@@ -1,5 +1,5 @@
 Agustin Fernandez
 Adriana Rubio
 Alen Ruffo Rey
-Carlos Yaspe
-Juan Yaspe
+Carlos Herrera Yaspe
+Juan Jose Calderon Yaspe
