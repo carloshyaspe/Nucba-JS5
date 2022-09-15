@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/af216a0741.js" crossorigin="anonymous"></script>
+    <title>E5</title> 
+</head>
+
+<body>
+  <!--HEADER-->
+    <header>
+        <div class="navbar">
+            <div class="logo-menu">
+                <img src="./assets/nucbazappiicon 1.png" alt="" class="logo-img">
+            </div>
+            <div class="nav-items">
+                <div class="home">
+                <img src="./assets/Home.png" class="home-img"alt="">
+                <p>Home</p>
+                </div> 
+                <img src="./assets/Fill 7.png" class="cartLogo" id="cartLogo" onclick="toggleCarrito()" alt="">
+                <img src="./assets/Ellipse 163.png" class="eclipse" alt=""> 
+                <p class="cart-cont" id="cart-cont"></p>
+                <img src="./assets/Fill 4.png" class="head" alt="">
+                 <img src="./assets/Fill 1.png" class="cuerpo" alt="">
+            </div>
+        </div>
+    </header>
+    <!--CART MENU-->
+    <div class="cart-menu" id="cart-menu">
+      <button  class="close-btn" onclick="toggleCarrito()">x</button>
+      <h3 class="cart-product-list"> </h3>
+      <div class="cards-cart">
+
+
+      </div>
+        <div class="total-contenedor">
+          <h3>Total : </h3>
+          <h3 class="total-price" id="total-products"></h3>
+        </div>
+        <div class="buy-btn">
+          <button class="comprar" id="btn-comprar">COMPRAR</button>
+        </div>
+      
+    </div>
+    
+    <!--HERO-->
+    <section class="desc">
+            <div class="hero-desc">
+                <h1>Si tenes zappi,</h1>
+                    <h2>tenes Nucba.</h2>
+                    <p>buscá lo que quieras y nucba te quedes sin comida.</p>   
+                    <button class="show-more"id="show-more">VER MÀS</button>
+            </div>
+            <div class="img-pizzas">
+                <img src="./assets/image 34.png" class="pizza1" alt="">
+                <img src="./assets/pizza 1.png" class="pizza2" alt="">
+            </div>
+    </section>
+
+<!--RECOMENDACIONES-->
+    <section class="recomendaciones">
+      <h4>Hoy te recomendamos</h4>
+      <div class="recomendaciones__cards__container">
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-1.png" style="height: 80px" alt="">
+              </div>
+              <p>Pizzas</p>
+          </div>
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-8.png" style="height: 80px" alt="">
+              </div>
+              <p>Bennazianna</p>
+          </div>
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-10.png" style="height: 80px" alt="">
+              </div>
+              <p>Papas | Provenzal</p>
+          </div>
+  </section>
+
+  <!--CATEGORIAS-->
+    <section class="categorias" id="categorias">
+        <h4>Categorias</h4>
+      <div class="categorias__cards__container">
+        <div class="categorias__cards" data-category="pizzas">
+          <div class="card__img">
+            <img src="./assets/image 34.png" alt="">
+          </div>
+          <p>Pizzas</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="hamburguesas">
+          <div class="card__img">
+            <img src="./assets/burger 1.png" alt="">
+          </div>
+          <p>Hamburguesas</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="guarniciones">
+          <div class="card__img">
+            <img src="./assets/fries 2.png" alt="">
+          </div>
+          <p>Guarniciones</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="individuales">
+          <div class="card__img">
+            <img src="./assets/pizza 2.png"alt="">
+          </div>
+          <p>Individuales</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="wraps">
+          <div class="card__img">
+            <img src="./assets/buritto 1.png" alt="">
+          </div>
+          <p>Wraps</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="comida-mexicana">
+          <div class="card__img">
+            <img src="./assets/taco 1.png" alt="">
+          </div>
+          <p>Comida mexicana</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="bebidas">
+          <div class="card__img">
+            <img src="./assets/float 1.png" alt="">
+          </div>
+          <p>Bebidas</p>
+          <hr class="filter">
+        </div>
+      </div>
+      </section>
+<!--PRODUCTOS-->
+
+      <section class="products-section">
+        <h3>Los más populares</h3>
+        <div class="products">
+        </div>
+      </section>
+      
+<!--FOOTER-->
+     <footer class="footer">
+      <div class="contacto-footer">
+        <ul class="contacto">
+          <li>Términos de Uso</li>
+          <li>Trabajá con Nosotros</li>
+          <li>Soporte</li>
+        </ul>
+      </div>
+      <div class="tittle-p">
+      <p>Hecho️ con <span class="cora">❤</span> en </p>
+      <b>NUCBAZAPPI</b>
+      </div>
+      
+     </footer>
+</body>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</html>
